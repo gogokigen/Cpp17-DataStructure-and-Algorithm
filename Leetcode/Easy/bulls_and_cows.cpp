@@ -56,8 +56,9 @@ public:
         int countS[10] = {0};
         int countG[10] = {0};
         for(i = 0; i < n; i++){
-            if(secret[i] == guess[i]) bull++;
-            else{
+            if(secret[i] == guess[i]){
+                bull++;
+            } else {
                 // Calculate the cows:
                 // How many are the number 0?
                 // How many are the number 1?
