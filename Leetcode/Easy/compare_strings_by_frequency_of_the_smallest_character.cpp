@@ -17,6 +17,7 @@
 * Explanation: It's the substring "ab" twice.
 *******************************************************************/
 #include <iostream>
+#include <vector> //for vector
 using namespace std;
 
 
