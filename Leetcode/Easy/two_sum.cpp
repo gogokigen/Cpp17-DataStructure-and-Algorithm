@@ -34,6 +34,7 @@ public:
             }
         }
         return ret;
+    }
 
     //One-pass Hash Table, Time complexity: O(n); Space complexity: O(n); 
     vector<int> twoSum_hash(vector<int>& nums, int target) {
