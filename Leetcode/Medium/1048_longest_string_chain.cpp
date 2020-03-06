@@ -25,7 +25,6 @@
 *******************************************************************/
 #include <iostream>
 #include <vector> //for vector
-#include <iterator> // iterator
 #include <algorithm>
 #include <unordered_map>
 using namespace std;
