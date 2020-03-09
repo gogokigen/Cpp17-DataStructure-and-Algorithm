@@ -17,7 +17,8 @@
 *
 *******************************************************************/
 #include <iostream>
-#include <bits/stdc++.h>  //stack
+#include <vector> //for vector
+#include <algorithm> 
 using namespace std;
 
 
