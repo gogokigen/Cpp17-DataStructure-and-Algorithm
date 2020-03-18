@@ -78,6 +78,8 @@ public:
 int main()
 {
     clock_t start, stop;
+    int ret = -1;
+
     //Test Cases
     // find : 333
     vector<int> targetList = { 0, 1 , 4 , 5, 8, 9, 88, 101, 102, 103, 234, 256, 333, 444, 555, 666, 999, 777777};
