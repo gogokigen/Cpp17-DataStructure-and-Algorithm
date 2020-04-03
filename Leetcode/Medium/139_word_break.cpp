@@ -32,7 +32,7 @@ public:
             for(auto k : wordDict){ // find in dictionary
                 int startIdx = i - k.size(); //start index of substring
                 if(startIdx < 0 || dp[startIdx] == false) continue;
-                if ( k == s.substr(startIdx, k.size())){
+                if ( k == s.substr(startIdx, k.size())){ //compare substring with the element of wordDict
                     dp[i] = true;
                     break;
                 }
