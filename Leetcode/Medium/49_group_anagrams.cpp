@@ -34,9 +34,14 @@ public:
 
         multiset<string> category;
         unordered_map <string,vector<string>> table;
-        for(auto i:strs){
-            table[strSort(i)].push_back(i);
+        for (auto str: strs) {
+            string strCopy = str;
+            sort(strCopy.begin(), strCopy.end());
+            table[strCopy].push_back(str);
         }
+        //for(auto i:strs){
+        //    table[strSort(i)].push_back(i);
+        //}
 
         vector<vector<string>> ret;
         for(auto i:table){
