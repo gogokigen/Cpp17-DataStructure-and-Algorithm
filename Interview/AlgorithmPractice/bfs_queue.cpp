@@ -3,7 +3,7 @@
 * Practice: BFS
 * 
 * References: 
-*  1. BDS: https://www.geeksforgeeks.org/level-order-tree-traversal/
+*  1. BFS: https://www.geeksforgeeks.org/level-order-tree-traversal/
 *
 * Key:
 *  1. Queue
