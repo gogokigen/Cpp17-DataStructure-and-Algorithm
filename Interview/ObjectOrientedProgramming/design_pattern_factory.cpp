@@ -3,7 +3,8 @@
 * 
 * Reference: 
 *  1. Very clearly explanation https://www.geeksforgeeks.org/design-patterns-set-2-factory-method/
-*  2. https://codereview.stackexchange.com/questions/240157/c-template-to-implement-the-factory-pattern
+*  2. https://www.tutorialspoint.com/design_pattern/factory_pattern.htm
+*  3. https://codereview.stackexchange.com/questions/240157/c-template-to-implement-the-factory-pattern
 *
 *
 * Key:
@@ -52,13 +53,15 @@ class ImsPhone : public Phone {
 // Factory method to create objects of different types. 
 // Change is required only in this function to create a new object type 
 Phone* Phone::Create(PhoneType type) { 
-    if (type == Gsm) 
-        return new GsmPhone(); 
-    else if (type == Cdma) 
+    if (type == Gsm){
+        return new GsmPhone();
+    } else if (type == Cdma){
         return new CdmaPhone(); 
-    else if (type == Ims) 
+    } else if (type == Ims){
         return new ImsPhone(); 
-    else return NULL; 
+    }else{
+        return NULL;  
+    }
 } 
 
 
