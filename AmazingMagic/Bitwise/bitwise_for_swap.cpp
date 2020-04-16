@@ -14,14 +14,13 @@
 *  1. 
 *
 *******************************************************************/
-#include <iostream>
-using namespace std;
+#include <iostream> 
+using namespace std; 
 
 void swap_xor(int* x, int* y){
     *x = *x ^ *y;
     *y = *y ^ *x;
     *x = *x ^ *y;
-    cout <<"Output x: "<< *x << ", y: "<<*y<<endl;
 }
 
 // main function to perform division of two numbers
@@ -32,6 +31,6 @@ int main(void){
 	int* py = &y;
     cout <<"Input x: "<< *px << ", y: "<<*py<<endl;
     swap_xor(px,py);
-
+    cout <<"Output x: "<< *px << ", y: "<<*py<<endl;
 	return 0;
 }
