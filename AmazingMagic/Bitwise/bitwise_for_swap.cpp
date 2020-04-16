@@ -25,10 +25,10 @@ void swap_xor(int* x, int* y){
 
 // main function to perform division of two numbers
 int main(void){
-	int x = 22;
-	int y = -7;
-	int* px = &x;
-	int* py = &y;
+    int x = 22;
+    int y = -7;
+    int* px = &x;
+    int* py = &y;
     cout <<"Input x: "<< *px << ", y: "<<*py<<endl;
     swap_xor(px,py);
     cout <<"Output x: "<< *px << ", y: "<<*py<<endl;
