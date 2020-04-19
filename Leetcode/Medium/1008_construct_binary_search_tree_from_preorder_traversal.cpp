@@ -42,14 +42,14 @@ public:
                 s.top()->left = temp;
                 s.push(temp); 
             }else {
-                TreeNode* child = NULL;
+                TreeNode* temp = NULL;
                 while(!s.empty()
                       &&s.top()->val < preorder[i]){
-                    child = s.top();
+                    temp = s.top();
                     s.pop();
                 }
                 TreeNode * newNode = new TreeNode(preorder[i]);
-                child->right = newNode;
+                temp->right = newNode;
                 s.push(newNode);
             }
         }
