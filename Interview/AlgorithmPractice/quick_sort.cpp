@@ -5,6 +5,7 @@
 * References: 
 *  1. https://www.youtube.com/watch?v=PgBzjlCcFvc
 *  2. https://www.geeksforgeeks.org/quick-sort/
+*  3. Analyze: https://www.khanacademy.org/computing/computer-science/algorithms/quick-sort/a/analysis-of-quicksort
 *
 * Key:
 *  1. 
