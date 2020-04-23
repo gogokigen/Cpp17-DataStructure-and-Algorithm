@@ -2,6 +2,7 @@
   
 https://youtu.be/r1MXwyiGi_U  
 https://youtu.be/zHczhZn-z30  
+
   
 Data Structures  
  - Stacks  
@@ -29,10 +30,20 @@ Tree
  - B-Tree
  - Red-Black Tree
  - AVL Tree
-
-Tree traversals  
+  
+Tree Operation  
+ - Path  
+ - Balance
+ - Height 
  - In-order traversal  
  - Pre-order traversal  
  - Post-order traversal  
- 
+  
+  
+# References  
+  
+Cheat Sheet  
 https://www.bigocheatsheet.com/  
+  
+Binary Tree Interview Questions and Practice Problems
+https://link.medium.com/5syJXExAU5
