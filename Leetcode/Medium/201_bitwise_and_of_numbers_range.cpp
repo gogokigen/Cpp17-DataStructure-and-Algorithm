@@ -13,8 +13,8 @@
 * Key:
 *  1. 
 *
-* Advanced:
-*  1. 
+* References:
+*  1. https://www.geeksforgeeks.org/bitwise-and-or-of-a-range
 *
 *******************************************************************/
 class Solution {
