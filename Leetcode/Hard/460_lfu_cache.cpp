@@ -25,9 +25,12 @@
 class LFUCache {
 private:
     map <int, int> mapKeyFreq; // key, freq
-    map<int, deque<int>> mapFreqKey; // freq to key(as a queue)
     unordered_map <int,int> mapKeyVal; //key,value
     int capacity;
+
+    // freq to key(as a queue),
+    // you can choose freq, them find its key
+    map<int, deque<int>> mapFreqKey;
 
 public:
     LFUCache(int capacity):capacity(capacity) {
@@ -35,9 +38,9 @@ public:
     
     int get(int key) {
         if(mapKeyVal.count(key)){
-            auto u = mapKeyFreq[key];
-            mapFreqKey[u+1].push_back(key);
-            mapKeyFreq[key] = u+1;
+            auto f = mapKeyFreq[key];
+            mapFreqKey[f+1].push_back(key);
+            mapKeyFreq[key] = f+1;
             return mapKeyVal[key];
         }
         return -1;
@@ -45,11 +48,11 @@ public:
     
     void put(int key, int value) {
         if(capacity == 0) return;
-        //if(mapKeyVal.find(key) != mapKeyVal.end()) {
+
         if(mapKeyVal.count(key)){//exist
-            auto u = mapKeyFreq[key];
-            mapFreqKey[u+1].push_back(key);
-            mapKeyFreq[key] = u + 1;
+            auto f = mapKeyFreq[key];
+            mapFreqKey[f+1].push_back(key);
+            mapKeyFreq[key] = f + 1;
             mapKeyVal[key] = value;
         }else{
             bool remove = false;
