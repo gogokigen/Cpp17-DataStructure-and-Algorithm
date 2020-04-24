@@ -39,6 +39,12 @@ Tree Operation
  - Pre-order traversal  
  - Post-order traversal  
   
+Cache
+ - FIFO (First In, First Out)  
+ - LFU (Least Frequently Used)  
+ - LRU (Least Recently Used)  
+ - NMRU (Not Most Recently Used)  
+  
   
 # References  
   
