@@ -52,4 +52,7 @@ Cheat Sheet
 https://www.bigocheatsheet.com/  
   
 Binary Tree Interview Questions and Practice Problems  
-https://link.medium.com/5syJXExAU5
+https://link.medium.com/5syJXExAU5  
+  
+Khan  
+https://www.khanacademy.org/computing/computer-science/algorithms
