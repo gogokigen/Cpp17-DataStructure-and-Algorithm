@@ -33,8 +33,10 @@ Tree
   
 Tree Operation  
  - Path  
- - Balance
  - Height 
+ - Balance  
+ - Complete
+ - Symmetric  
  - In-order traversal  
  - Pre-order traversal  
  - Post-order traversal  
