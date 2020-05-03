@@ -23,6 +23,29 @@
 *******************************************************************/
 class Solution {
 public:
+    //faster
+    bool canConstruct(string ransomNote, string magazine) {
+        if(ransomNote.empty() ) return true;
+        if(magazine.empty()) return false;
+        
+        int count = 0;
+        vector<int> mag(26,0);
+        for(char j:ransomNote){
+            mag[j-'a']++;
+            count++;
+        }
+
+        for(char i:magazine){
+            if(mag[i-'a'] > 0){
+                mag[i-'a']--;
+                count--;
+                if(count == 0) return true;
+            }
+        }
+
+        return count == 0;
+    }
+    //slow
     bool canConstruct(string ransomNote, string magazine) {
         if(ransomNote.empty() ) return true;
         if(magazine.empty()) return false;
