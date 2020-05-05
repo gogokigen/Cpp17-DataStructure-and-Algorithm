@@ -20,7 +20,7 @@
 * prev^ ^next
 *
 *
-* Step 1: next = curr->next;
+* Step 1: next = curr->next; //next move back
 * 
 *           curr head
 *              v v
@@ -28,7 +28,7 @@
 * prev^                ^next
 *
 *
-* Step 2: curr->next = prev;
+* Step 2: curr->next = prev; // curr->next reverse direction
 * 
 *           curr head
 *              v v
@@ -36,8 +36,8 @@
 * prev^                ^next
 *
 *
-* Step 3: prev = curr;
-*         curr = next;
+* Step 3: prev = curr;  // prev moves back ( old curr)
+*         curr = next;  // curr move back ( new curr)
 * 
 *                head  curr
 *                v     v
