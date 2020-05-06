@@ -7,7 +7,7 @@
 *  2. By position https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/
 *
 * Key:
-*  1. 
+*  1. no mallocm no free https://stackoverflow.com/questions/40678365/cant-free-node-in-double-linked-list-in-c
 *
 *******************************************************************/
 #include <iostream>
