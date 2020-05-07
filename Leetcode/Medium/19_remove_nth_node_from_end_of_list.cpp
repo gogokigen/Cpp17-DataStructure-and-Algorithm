@@ -30,6 +30,13 @@
  */
 
 // Method 1: 1 pass
+/* n =2                   X
+ o ->  * - * - * - * - * - * - * -> NULL
+dummy
+ ^f  ..|...|...| =>| =>| =>| =>| =>+5
+ ^s  =>| =>| =>| =>| =>+5
+                      \______/^
+*/
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
