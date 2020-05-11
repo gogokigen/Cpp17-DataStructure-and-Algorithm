@@ -51,6 +51,16 @@ public:
         }
     }
 
+//Recursive
+    void DFS(Node* root){
+        if (root == NULL) 
+            return;
+            
+        cout<< root->val << endl;
+
+        DFS(root->left);
+        DFS(root->right);
+    }
 };
 
 int main()
