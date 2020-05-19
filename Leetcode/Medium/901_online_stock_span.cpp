@@ -18,6 +18,9 @@
 *
 * Explanation:
 *
+* References:
+*  1. https://www.youtube.com/watch?v=RGRC46zHB98&t=435s
+*
 *******************************************************************/
 class StockSpanner {
 private:
