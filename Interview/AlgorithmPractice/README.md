@@ -48,13 +48,16 @@ Cache
  - NMRU (Not Most Recently Used)  
   
   
+# Template  
+http://gitlinux.net/2019-10-26-coding-template/  
+  
+DP Template  
+https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns  
+  
 # References  
   
 Cheat Sheet  
 https://www.bigocheatsheet.com/  
-  
-Template
-http://gitlinux.net/2019-10-26-coding-template/  
   
 Binary Tree Interview Questions and Practice Problems  
 https://link.medium.com/5syJXExAU5  
