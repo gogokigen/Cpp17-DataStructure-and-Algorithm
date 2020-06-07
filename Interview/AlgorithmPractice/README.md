@@ -54,6 +54,9 @@ http://gitlinux.net/2019-10-26-coding-template/
 DP Template  
 https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns  
   
+Greedy Template  
+https://leetcode.com/discuss/general-discussion/669996/greedy-for-beginners-problems-sample-solutions  
+  
 Graph Template  
 https://leetcode.com/discuss/general-discussion/655708/graph-problems-for-beginners-practice-problems-and-sample-solutions  
   
