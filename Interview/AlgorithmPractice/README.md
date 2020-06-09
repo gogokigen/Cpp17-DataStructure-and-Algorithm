@@ -48,6 +48,10 @@ Cache
  - NMRU (Not Most Recently Used)  
   
   
+# Visualize  
+https://visualgo.net/en  
+  
+  
 # Template  
 http://gitlinux.net/2019-10-26-coding-template/  
   
@@ -59,6 +63,11 @@ https://leetcode.com/discuss/general-discussion/669996/greedy-for-beginners-prob
   
 Graph Template  
 https://leetcode.com/discuss/general-discussion/655708/graph-problems-for-beginners-practice-problems-and-sample-solutions  
+  
+  
+# Review proctice  
+https://www.hackerearth.com/practice/algorithms/searching/linear-search/tutorial/  
+  
   
 # References  
   
