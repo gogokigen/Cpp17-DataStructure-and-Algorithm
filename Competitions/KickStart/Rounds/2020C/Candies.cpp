@@ -1,10 +1,26 @@
+/*******************************************************************
+* 
+* References: 
+*  1. https://www.youtube.com/watch?v=WbafSgetDDk
+*
+* Key:
+*  1. Fenwick tree
+*
+*******************************************************************/
 //https://codingcompetitions.withgoogle.com/kickstart/round/000000000019ff43/0000000000337b4d
 #include <bits/stdc++.h>
 using namespace std;
 
 #define ll long long
 #define ar array
+const double eps = 1e-10;
+const double pi = 3.1415926535897932384626433832795;
+const double eln = 2.718281828459045235360287471352;
 
+
+
+
+// My solution spend much time
 int calculate(vector<int>& arr, int start, int end){
     int ret = 0;
     int sign = -1;

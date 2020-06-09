@@ -47,6 +47,10 @@ Cache
  - LRU (Least Recently Used)  
  - NMRU (Not Most Recently Used)  
   
+Advance  
+ - Topology sort  
+ - Fenwick tree  
+  
   
 # Visualize  
 https://visualgo.net/en  
