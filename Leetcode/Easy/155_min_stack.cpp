@@ -66,12 +66,15 @@ public:
     
     void push(int x) {
         minStack.push_back(x);
+        
+        // update min
         if (x < min) {
             min = x;
         }
     }
     
     void pop() {
+        // update min
         if (top() == min) {
             if (minStack.size() == 1) {
                 min = INT_MAX;
@@ -84,6 +87,7 @@ public:
                 }
             }
         }
+        
         minStack.pop_back();
     }
     
