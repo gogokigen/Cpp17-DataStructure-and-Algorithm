@@ -71,7 +71,7 @@ public:
 class RandomizedSet {
 public:
     //vector<int> tbl;
-    unordered_set<int> cache; //val,position
+    unordered_set<int> cache;
 
     /** Initialize your data structure here. */
     RandomizedSet() {
