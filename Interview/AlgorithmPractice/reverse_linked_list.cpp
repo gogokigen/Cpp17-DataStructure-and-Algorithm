@@ -69,7 +69,7 @@ public:
         
         while(curr != NULL){
             next = curr->next;
-            curr->next = prev;
+            curr->next = prev; //really revere
             prev = curr;
             curr = next;
         }
