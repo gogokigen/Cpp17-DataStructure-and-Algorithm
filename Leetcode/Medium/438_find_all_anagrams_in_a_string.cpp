@@ -44,9 +44,13 @@ public:
         vector<int> ret;
         for(int i = 0; i < sLen; i++){
             sTbl[(int)s[i]-'a']++;
+
             if(i >= pLen){
+            // remove one letter 
+            // from the left side of the window
                 sTbl[(int)s[i-pLen]-'a']--;
             }
+
             if(sTbl==pTbl){
                 ret.push_back(i - pLen + 1);
             }
