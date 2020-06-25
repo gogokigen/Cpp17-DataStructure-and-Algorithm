@@ -19,6 +19,32 @@
 *  1. 
 *
 *******************************************************************/
+//find cycle
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        // Find the intersection point of the two runners.
+        int fast = nums[0];
+        int slow = nums[0];
+        do {
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+            //cout << "fast: " << fast << ", slow: " << slow << endl;
+        } while (fast != slow);
+        cout << "~"<< endl;
+        //if fast == slow
+        slow = nums[0];
+        while(fast != slow){
+            fast = nums[fast];
+            slow = nums[slow];
+            //cout << "fast: " << fast << ", slow: " << slow << endl;
+        }
+        return fast;
+        
+    }
+};
+
+//set
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
