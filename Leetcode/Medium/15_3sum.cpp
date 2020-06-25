@@ -34,7 +34,9 @@ private:
             }else if(sum > 0 || (right < len - 1 && nums[right] == nums[right + 1])){
                 right--;
             }else{
-                res.push_back({nums[i], nums[left++], nums[right--]});
+                res.push_back({nums[i], nums[left], nums[right]});
+                left++;
+                right--;
             }
         }
     }
