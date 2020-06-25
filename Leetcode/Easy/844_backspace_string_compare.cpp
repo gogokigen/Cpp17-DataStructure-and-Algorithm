@@ -26,7 +26,7 @@ class Solution {
 public:
     void removeIcon(string& S) {
         int pos = S.find("#");
-        while(pos != -1){
+        while(pos != -1){//pos == -1 == without "#"
             if(pos == 0){ // S[0] == "#"
                 S = S.substr(1);
             }else{
