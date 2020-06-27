@@ -51,12 +51,15 @@ public:
             addition = tmp/10;
             
             root->next = new ListNode(tmp%10);
-            root=root->next;
             
+            root = root->next;
+            //cout << "dummy->next: " << dummy->next->val << endl;
+            //cout << "root->next: " << root->val << endl;
+    
             if(p != nullptr) p = p->next;
             if(q != nullptr) q = q->next;
         }
-        
+
         if(addition > 0) root->next = new ListNode(addition);
         return dummy->next;
     }

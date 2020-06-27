@@ -78,7 +78,10 @@ public:
             first = first->next;
             length--;
         }
+        ListNode* tmp = first->next; //avoid leak
         first->next = first->next->next;
+        delete tmp; //avoid leak
+        tmp = nullptr; //avoid leak
         return dummy->next;
     }
 };
