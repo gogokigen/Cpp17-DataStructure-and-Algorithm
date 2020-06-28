@@ -40,6 +40,8 @@ private:
         int sum = l + r + root->val;
         
         ans = max(ans, sum);
+        //cout << "l: " << l << ", r: " << r << ", sum: " << sum << ", ans: " << ans;
+        //cout << " max(l , r) + root->val: " << max(l , r) + root->val << endl;
         return max(l , r) + root->val;
     }
 public:
