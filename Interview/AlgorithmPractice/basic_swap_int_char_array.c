@@ -7,7 +7,7 @@ int my_swap_int(int* x, int* y){
 }
 
 int my_swap_ptr(char** x, char** y){
-    char *tmp = *x;
+    char* tmp = *x;
     *x = *y;
     *y = tmp;
 }
