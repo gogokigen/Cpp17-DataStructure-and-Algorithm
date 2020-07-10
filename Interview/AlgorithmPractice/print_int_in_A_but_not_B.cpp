@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <set>
 using namespace std;
 
 class Solution {
@@ -28,6 +29,24 @@ public:
             cout << "ret: " << i << ", ";
         }
         cout << endl;
+    }
+
+    //without sort
+    void printAnotB(vector<int>& A, vector<int>& B){
+        
+        int lenA = A.size();
+        int lenB = B.size();
+        
+        set<int> cacheB;
+        for(int& i:B){
+            cacheB.insert(i);
+        }
+
+        for(int i = 0; i < lenA; i++){
+            if(!cacheB.count(A[i])){
+                cout << "ret: " << A[i] << ", ";
+            }
+        }
     }
 
 };
