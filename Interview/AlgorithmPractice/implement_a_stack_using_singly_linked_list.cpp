@@ -11,11 +11,14 @@ struct Node {
 };
 
 
-class Solution{
+class Stack{
 public:
 
-struct Node* top; 
-  
+struct Node* top;
+int capacity = 0;
+    
+    Stack(int max_size):top(NULL), capacity(max_size){}
+
 // Utility function to add an element data in the stack 
  // insert at the beginning 
 void push(int data) { 
@@ -34,22 +37,22 @@ void push(int data) {
     temp->data = data; 
   
     // put top pointer reference into temp link 
-    temp->next = top; 
+    temp->next = this->top; 
   
     // make temp as top of Stack 
-    top = temp; 
+    this->top = temp; 
 } 
   
 // Utility function to check if the stack is empty or not 
 int isEmpty() { 
-    return top == NULL; 
+    return this->top == NULL; 
 } 
   
 // Utility function to return top element in a stack 
 int peek() { 
     // check for empty stack 
     if (!isEmpty()) 
-        return top->data; 
+        return this->top->data; 
     else
         exit(1); 
 } 
@@ -61,16 +64,16 @@ void pop() {
     struct Node* temp; 
   
     // check for stack underflow 
-    if (top == NULL) { 
+    if (this->top == NULL) { 
         cout << "\nStack Underflow" << endl; 
         exit(1); 
     } 
     else { 
         // top assign into temp 
-        temp = top; 
+        temp = this->top; 
   
         // assign second node to top 
-        top = top->next; 
+        this->top = this->top->next; 
   
         // destroy connection between first and second 
         temp->next = NULL; 
@@ -86,12 +89,12 @@ void display()  {
     struct Node* temp; 
   
     // check for stack underflow 
-    if (top == NULL) { 
+    if (this->top == NULL) { 
         cout << "\nStack Underflow"; 
         exit(1); 
     } 
     else { 
-        temp = top; 
+        temp = this->top; 
         while (temp != NULL) { 
   
             // print node data 
@@ -107,7 +110,7 @@ void display()  {
 
 int main(){
 
-    Solution* sol = new Solution;
+    Stack* sol = new Stack(6);
     
     sol->push(11); 
     sol->push(22); 
