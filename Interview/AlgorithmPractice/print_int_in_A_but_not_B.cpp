@@ -43,6 +43,7 @@ public:
         }
 
         for(int i = 0; i < lenA; i++){
+            //if(cacheB.find(A[i]) == cacheB.end()){
             if(!cacheB.count(A[i])){
                 cout << "ret: " << A[i] << ", ";
             }
@@ -54,8 +55,10 @@ public:
 int main(){
 
     Solution* sol = new Solution;
-    vector<int> A = { 5, 888, 4, 99, 0, 1, 66, 87, 34, 55};
-    vector<int> B = { 7, 1, 87, 3, 4, 0};
+    //vector<int> A = { 5, 888, 4, 99, 0, 1, 66, 87, 34, 55};
+    //vector<int> B = { 7, 1, 87, 3, 4, 0};
+    vector<int> A = { 3, 7, 8, 0, 1};
+    vector<int> B = { 8, 9, 10, 3};
     sol->printAnotB( A, B);
 
     return 0;
