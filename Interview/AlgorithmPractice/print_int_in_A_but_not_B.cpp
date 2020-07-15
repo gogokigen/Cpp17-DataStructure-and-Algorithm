@@ -50,6 +50,24 @@ public:
         }
     }
 
+    //force
+    void printAnotB(vector<int>& A, vector<int>& B){
+        
+        int lenA = A.size();
+        int lenB = B.size();
+        
+        for(int& i:A){
+            for(int j = 0; j < lenB; j++){
+                if( i == B[j]){
+                    break;
+                }else{
+                    if(j == lenB - 1){
+                        cout << "ret: " << i << ", ";
+                    }
+                }
+            }
+        }
+    }
 };
 
 int main(){
