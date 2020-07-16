@@ -31,7 +31,7 @@ public:
         Node* prev;
         
         //if head is the target
-        while(curr != NULL && curr->val == val){
+        if(curr != NULL && curr->val == val){
             root = curr->next;
             return;
         }
@@ -67,10 +67,32 @@ public:
         //free(curr->next);
         curr->next = tmp;
     }
+
+    void deleteNode(Node **head_ref, int position) { 
+        if (*head_ref == NULL) return; 
+  
+        Node* temp = *head_ref; 
+  
+        if (position == 0) { 
+            *head_ref = temp->next;   // Change head 
+            free(temp);               // free old head 
+            return; 
+        } 
+  
+        for (int i=0; temp!=NULL && i<position-1; i++) 
+            temp = temp->next; 
+  
+        if (temp == NULL || temp->next == NULL) 
+            return; 
+  
+
+        Node *next = temp->next->next; 
+        free(temp->next);  // Free memory 
+        temp->next = next; 
+    } 
 };
 
-int main()
-{
+int main(){
 // 1->2->3->4->5
     //Test Cases
     Node node[5];
@@ -100,6 +122,15 @@ int main()
         cout << tmp->val << endl;
         tmp = tmp->next;
     }
+
+    Node* ref = node;
+    deleteNode(&ref, 2);
+    Node* tmp2 = &node[0];
+    while(tmp2 != NULL){
+        cout << tmp2->val << endl;
+        tmp2 = tmp2->next;
+    }
+
 
     return 0;
 }

@@ -34,7 +34,7 @@ public:
          
         while (head && head->val == val){
             head = head->next;
-            //delete(curr);
+            delete(curr);
             curr = head;
         }
         ListNode* temp = curr;
@@ -42,7 +42,7 @@ public:
             if (curr->next->val == val){
                 temp = curr->next;
                 curr->next = temp->next;
-                //delete(temp);
+                delete(temp);
             }else{
                 curr = curr->next;
             }
