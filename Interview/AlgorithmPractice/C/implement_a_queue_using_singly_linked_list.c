@@ -26,7 +26,7 @@ void enqueue(struct Node** ref, int data){
 }
 
 void traverse(struct Node** ref){
-    while((*ref)->next != NULL){
+    while((*ref) != NULL){
         printf("%d\n", (*ref)->val);
         (*ref) = (*ref)->next;
     }
