@@ -32,7 +32,6 @@ public:
         int size = res.size();
         for(int i = 0; i < size; ++i){
             swap(res[i], res[i + rand() % (size-i)]);
-            size = res.size();
         }
         return res;
     }
