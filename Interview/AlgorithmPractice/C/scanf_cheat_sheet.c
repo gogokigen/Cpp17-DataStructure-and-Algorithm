@@ -10,6 +10,7 @@ int maxSubArray(int nums[], int len) {
     int currSum = nums[0];
     int maxSum = nums[0];
     for(int i = 1; i < len; ++i) {
+        if(nums[i] == EOF) break;
         currSum = max(nums[i], currSum + nums[i]);
         maxSum = max(maxSum, currSum);
     }
@@ -44,9 +45,11 @@ int main() {
 
     int array[5];
     printf("Input for numbers \n");
-    for(int i = 0; i < 5; i++){
+    while( i < 5){
         scanf("%d", &array[i]);
+        if (array[i] == EOF) break;
         printf("%d \n",array[i]);
+        i++;
     }
     int len = sizeof(array)/sizeof(array[0]);
     printf("len: %d \n", len);
