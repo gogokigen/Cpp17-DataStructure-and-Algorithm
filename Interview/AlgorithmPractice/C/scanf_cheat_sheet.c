@@ -1,3 +1,23 @@
+
+int maxSubArray(int nums[], int len) {
+
+    // don't do this
+    //int len = sizeof(nums)/sizeof(nums[0]);
+    if(len==0) return 0;
+    if(len==1) return nums[0];
+
+
+    int currSum = nums[0];
+    int maxSum = nums[0];
+    for(int i = 1; i < len; ++i) {
+        currSum = max(nums[i], currSum + nums[i]);
+        maxSum = max(maxSum, currSum);
+    }
+    return maxSum;
+}
+
+
+
 int main() {
 
 
@@ -20,6 +40,18 @@ int main() {
     printf("Input for ch1:n"); 
     scanf("%c",&ch1); 
 
+
+
+    int array[5];
+    printf("Input for numbers \n");
+    for(int i = 0; i < 5; i++){
+        scanf("%d", &array[i]);
+        printf("%d \n",array[i]);
+    }
+    int len = sizeof(array)/sizeof(array[0]);
+    printf("len: %d \n", len);
+    printf("maxSubArray: %d \n",maxSubArray(array,len));
+    
     return 0;
 
 }
