@@ -61,8 +61,12 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+#include <iostream>
+using namespace std;
+
 class Solution {
 public:
+    ListNode* init;
     ListNode* reverseList(ListNode* head) {
         ListNode* prev = NULL;
         ListNode* next = NULL;
@@ -121,3 +125,36 @@ public:
     }
 
 };
+
+
+int main(){
+// 1->2->3->4->5
+    //Test Cases
+    ListNode node[5];
+    node[0].val = 1;
+    node[0].next = &node[1];
+
+    node[1].val = 2;
+    node[1].next = &node[2];
+
+    node[2].val = 3;
+    node[2].next = &node[3];
+    
+    node[3].val = 4;
+    node[3].next = &node[4];
+
+    node[4].val = 5;
+    node[4].next = NULL;
+
+
+    Solution* sol = new Solution();
+    sol->init = sol->reverseList(&node[0]);
+    
+    while(sol->init != NULL ){
+        cout << sol->init->val << endl;
+        sol->init = sol->init->next;
+    }
+
+
+    return 0;
+}
