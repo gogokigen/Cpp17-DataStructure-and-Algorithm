@@ -51,6 +51,7 @@
 * Advanced:
 *  1. https://stackoverflow.com/questions/2434411/linked-list-recursive-reverse
 *  2. https://www.geeksforgeeks.org/data-structures-linked-list-question-5/
+*  3. https://www.geeksforgeeks.org/c-program-for-reverse-a-linked-list/
 *
 *******************************************************************/
 /**
