@@ -18,7 +18,7 @@
 * References:
 *  1. 
 *
-*******************************************************************/vector<int> partitionLabels(string S) {
+*******************************************************************/
 class Solution {
 public:
     vector<int> partitionLabels(string S) {
