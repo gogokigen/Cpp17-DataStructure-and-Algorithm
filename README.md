@@ -1,4 +1,8 @@
 # Cpp17-DataStructure-and-Algorithm 
+
+Good References:
+https://github.com/grandyang/leetcode
+https://www.youtube.com/channel/UC5xDNEcvb1vgw3lE21Ack2Q
   
 Online Complier:  
 https://www.onlinegdb.com/online_c++_compiler  
