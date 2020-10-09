@@ -1,0 +1,362 @@
+﻿id,title,isPaidOnly,difficulty,likeDislike_ratio,likes,dislikes
+3,Longest Substring Without Repeating Characters,0,Medium,17,6602,383
+2,Add Two Numbers,0,Medium,3,6131,1594
+15,3Sum,0,Medium,8,4663,548
+5,Longest Palindromic Substring,0,Medium,11,4513,406
+11,Container With Most Water,0,Medium,8,4067,478
+146,LRU Cache,0,Medium,24,3724,152
+22,Generate Parentheses,0,Medium,16,3421,204
+200,Number of Islands,0,Medium,28,3298,117
+300,Longest Increasing Subsequence,0,Medium,44,3071,69
+33,Search in Rotated Sorted Array,0,Medium,8,3046,366
+287,Find the Duplicate Number,0,Medium,8,2983,344
+238,Product of Array Except Self,0,Medium,11,2882,247
+139,Word Break,0,Medium,18,2770,151
+17,Letter Combinations of a Phone Number,0,Medium,7,2660,340
+56,Merge Intervals,0,Medium,12,2631,209
+152,Maximum Product Subarray,0,Medium,22,2596,115
+560,Subarray Sum Equals K,0,Medium,36,2559,71
+39,Combination Sum,0,Medium,32,2534,77
+46,Permutations,0,Medium,30,2527,82
+55,Jump Game,0,Medium,10,2476,236
+215,Kth Largest Element in an Array,0,Medium,12,2475,197
+98,Validate Binary Search Tree,0,Medium,6,2468,365
+78,Subsets,0,Medium,42,2436,58
+236,Lowest Common Ancestor of a Binary Tree,0,Medium,16,2429,145
+322,Coin Change,0,Medium,28,2321,82
+79,Word Search,0,Medium,19,2293,119
+207,Course Schedule,0,Medium,20,2286,110
+31,Next Permutation,0,Medium,3,2249,727
+19,Remove Nth Node From End of List,0,Medium,13,2208,162
+105,Construct Binary Tree from Preorder and Inorder Traversal,0,Medium,35,2136,60
+49,Group Anagrams,0,Medium,15,2104,133
+96,Unique Binary Search Trees,0,Medium,25,2102,82
+34,Find First and Last Position of Element in Sorted Array,0,Medium,21,2082,98
+75,Sort Colors,0,Medium,11,2045,175
+94,Binary Tree Inorder Traversal,0,Medium,22,2029,91
+621,Task Scheduler,0,Medium,5,2017,368
+394,Decode String,0,Medium,18,1963,107
+138,Copy List with Random Pointer,0,Medium,3,1961,502
+62,Unique Paths,0,Medium,13,1956,143
+48,Rotate Image,0,Medium,11,1945,175
+208,Implement Trie (Prefix Tree),0,Medium,55,1931,35
+240,Search a 2D Matrix II,0,Medium,35,1920,54
+347,Top K Frequent Elements,0,Medium,15,1913,121
+127,Word Ladder,0,Medium,2,1906,906
+438,Find All Anagrams in a String,0,Medium,12,1876,145
+406,Queue Reconstruction by Height,0,Medium,8,1852,207
+102,Binary Tree Level Order Traversal,0,Medium,38,1838,48
+114,Flatten Binary Tree to Linked List,0,Medium,7,1817,240
+337,House Robber III,0,Medium,47,1813,38
+148,Sort List,0,Medium,19,1777,93
+142,Linked List Cycle II,0,Medium,12,1769,142
+279,Perfect Squares,0,Medium,11,1763,153
+91,Decode Ways,0,Medium,0,1739,1983
+253,Meeting Rooms II,1,Medium,61,1731,28
+64,Minimum Path Sum,0,Medium,38,1684,44
+647,Palindromic Substrings,0,Medium,19,1683,86
+221,Maximal Square,0,Medium,40,1675,41
+173,Binary Search Tree Iterator,0,Medium,6,1674,252
+338,Counting Bits,0,Medium,14,1672,119
+494,Target Sum,0,Medium,21,1665,79
+739,Daily Temperatures,0,Medium,34,1660,48
+309,Best Time to Buy and Sell Stock with Cooldown,0,Medium,26,1610,60
+399,Evaluate Division,0,Medium,12,1604,126
+416,Partition Equal Subset Sum,0,Medium,37,1547,41
+95,Unique Binary Search Trees II,0,Medium,11,1509,127
+92,Reverse Linked List II,0,Medium,14,1506,105
+378,Kth Smallest Element in a Sorted Matrix,0,Medium,15,1487,94
+24,Swap Nodes in Pairs,0,Medium,11,1441,128
+230,Kth Smallest Element in a BST,0,Medium,31,1433,46
+54,Spiral Matrix,0,Medium,3,1425,454
+209,Minimum Size Subarray Sum,0,Medium,16,1404,83
+380,Insert Delete GetRandom O(1),0,Medium,13,1401,101
+16,3Sum Closest,0,Medium,13,1384,100
+120,Triangle,0,Medium,8,1355,154
+442,Find All Duplicates in an Array,0,Medium,10,1340,123
+199,Binary Tree Right Side View,0,Medium,18,1330,71
+73,Set Matrix Zeroes,0,Medium,5,1320,231
+763,Partition Labels,0,Medium,19,1300,68
+695,Max Area of Island,0,Medium,19,1295,65
+47,Permutations II,0,Medium,28,1291,46
+18,4Sum,0,Medium,5,1286,257
+654,Maximum Binary Tree,0,Medium,7,1281,168
+210,Course Schedule II,0,Medium,14,1274,90
+153,Find Minimum in Rotated Sorted Array,0,Medium,7,1274,182
+109,Convert Sorted List to Binary Search Tree,0,Medium,17,1265,74
+222,Count Complete Tree Nodes,0,Medium,8,1263,154
+547,Friend Circles,0,Medium,12,1258,101
+179,Largest Number,0,Medium,7,1247,160
+103,Binary Tree Zigzag Level Order Traversal,0,Medium,17,1246,72
+43,Multiply Strings,0,Medium,2,1230,573
+116,Populating Next Right Pointers in Each Node,0,Medium,10,1227,113
+6,ZigZag Conversion,0,Medium,0,1219,3689
+310,Minimum Height Trees,0,Medium,16,1218,74
+341,Flatten Nested List Iterator,0,Medium,2,1171,486
+289,Game of Life,0,Medium,5,1160,214
+131,Palindrome Partitioning,0,Medium,24,1156,48
+402,Remove K Digits,0,Medium,16,1153,68
+241,Different Ways to Add Parentheses,0,Medium,19,1151,59
+516,Longest Palindromic Subsequence,0,Medium,8,1149,142
+264,Ugly Number II,0,Medium,15,1139,73
+143,Reorder List,0,Medium,14,1136,81
+486,Predict the Winner,0,Medium,15,1124,73
+8,String to Integer (atoi),0,Medium,0,1119,6961
+40,Combination Sum II,0,Medium,21,1118,51
+450,Delete Node in a BST,0,Medium,17,1114,65
+90,Subsets II,0,Medium,20,1107,54
+113,Path Sum II,0,Medium,26,1106,41
+213,House Robber II,0,Medium,28,1096,38
+863,All Nodes Distance K in Binary Tree,0,Medium,51,1076,21
+117,Populating Next Right Pointers in Each Node II,0,Medium,6,1069,158
+714,Best Time to Buy and Sell Stock with Transaction Fee,0,Medium,32,1064,33
+82,Remove Duplicates from Sorted List II,0,Medium,12,1062,88
+698,Partition to K Equal Sum Subsets,0,Medium,17,1058,61
+334,Increasing Triplet Subsequence,0,Medium,10,1058,100
+229,Majority Element II,0,Medium,8,1058,124
+36,Valid Sudoku,0,Medium,2,1058,368
+74,Search a 2D Matrix,0,Medium,8,1056,124
+106,Construct Binary Tree from Inorder and Postorder Traversal,0,Medium,45,1050,23
+211,Add and Search Word - Data structure design,0,Medium,16,1049,62
+162,Find Peak Element,0,Medium,0,1049,1539
+63,Unique Paths II,0,Medium,6,1039,172
+260,Single Number III,0,Medium,12,1013,82
+60,Permutation Sequence,0,Medium,3,1003,268
+133,Clone Graph,0,Medium,0,997,1052
+137,Single Number II,0,Medium,3,988,276
+50,"Pow(x, n)",0,Medium,0,986,2401
+332,Reconstruct Itinerary,0,Medium,1,979,641
+787,Cheapest Flights Within K Stops,0,Medium,26,974,37
+518,Coin Change 2,0,Medium,24,970,40
+130,Surrounded Regions,0,Medium,1,967,495
+77,Combinations,0,Medium,17,967,56
+144,Binary Tree Preorder Traversal,0,Medium,21,964,45
+134,Gas Station,0,Medium,2,960,321
+692,Top K Frequent Words,0,Medium,10,956,92
+377,Combination Sum IV,0,Medium,8,948,112
+328,Odd Even Linked List,0,Medium,3,944,242
+673,Number of Longest Increasing Subsequence,0,Medium,14,934,64
+395,Longest Substring with At Least K Repeating Characters,0,Medium,11,890,79
+652,Find Duplicate Subtrees,0,Medium,5,889,171
+540,Single Element in a Sorted Array,0,Medium,13,888,66
+445,Add Two Numbers II,0,Medium,7,888,115
+227,Basic Calculator II,0,Medium,5,885,159
+307,Range Sum Query - Mutable,0,Medium,13,860,66
+542,01 Matrix,0,Medium,9,859,87
+451,Sort Characters By Frequency,0,Medium,10,857,79
+503,Next Greater Element II,0,Medium,18,848,47
+525,Contiguous Array,0,Medium,19,834,42
+86,Partition List,0,Medium,3,829,220
+684,Redundant Connection,0,Medium,4,828,202
+373,Find K Pairs with Smallest Sums,0,Medium,11,828,71
+129,Sum Root to Leaf Numbers,0,Medium,28,827,29
+81,Search in Rotated Sorted Array II,0,Medium,2,824,358
+523,Continuous Subarray Sum,0,Medium,0,823,1131
+785,Is Graph Bipartite?,0,Medium,7,822,104
+658,Find K Closest Elements,0,Medium,4,822,168
+449,Serialize and Deserialize BST,0,Medium,14,822,55
+285,Inorder Successor in BST,1,Medium,15,820,53
+93,Restore IP Addresses,0,Medium,2,818,345
+29,Divide Two Integers,0,Medium,0,811,3894
+743,Network Delay Time,0,Medium,4,807,180
+454,4Sum II,0,Medium,13,806,62
+421,Maximum XOR of Two Numbers in an Array,0,Medium,5,804,156
+721,Accounts Merge,0,Medium,3,803,215
+567,Permutation in String,0,Medium,19,798,42
+583,Delete Operation for Two Strings,0,Medium,37,792,21
+718,Maximum Length of Repeated Subarray,0,Medium,23,789,33
+713,Subarray Product Less Than K,0,Medium,19,789,40
+979,Distribute Coins in Binary Tree,0,Medium,31,786,25
+417,Pacific Atlantic Water Flow,0,Medium,5,784,145
+220,Contains Duplicate III,0,Medium,0,783,784
+80,Remove Duplicates from Sorted Array II,0,Medium,1,782,591
+678,Valid Parenthesis String,0,Medium,28,773,27
+662,Maximum Width of Binary Tree,0,Medium,4,767,157
+650,2 Keys Keyboard,0,Medium,14,767,52
+277,Find the Celebrity,1,Medium,7,763,98
+973,K Closest Points to Origin,0,Medium,10,756,71
+456,132 Pattern,0,Medium,16,755,46
+286,Walls and Gates,1,Medium,83,750,9
+261,Graph Valid Tree,1,Medium,32,744,23
+61,Rotate List,0,Medium,0,740,888
+216,Combination Sum III,0,Medium,18,737,39
+324,Wiggle Sort II,0,Medium,1,732,407
+611,Valid Triangle Number,0,Medium,8,722,81
+767,Reorganize String,0,Medium,19,720,37
+12,Integer to Roman,0,Medium,0,718,2167
+366,Find Leaves of Binary Tree,1,Medium,71,715,10
+424,Longest Repeating Character Replacement,0,Medium,13,708,54
+464,Can I Win,0,Medium,5,707,127
+413,Arithmetic Slices,0,Medium,5,688,135
+983,Minimum Cost For Tickets,0,Medium,42,687,16
+740,Delete and Earn,0,Medium,11,681,58
+343,Integer Break,0,Medium,3,679,188
+856,Score of Parentheses,0,Medium,26,678,26
+151,Reverse Words in a String,0,Medium,0,678,2452
+907,Sum of Subarray Minimums,0,Medium,14,674,47
+325,Maximum Size Subarray Sum Equals k,1,Medium,25,674,26
+814,Binary Tree Pruning,0,Medium,29,673,23
+314,Binary Tree Vertical Order Traversal,1,Medium,5,672,132
+474,Ones and Zeroes,0,Medium,4,658,156
+670,Maximum Swap,0,Medium,13,657,48
+150,Evaluate Reverse Polish Notation,0,Medium,1,652,388
+376,Wiggle Subsequence,0,Medium,12,651,52
+712,Minimum ASCII Delete Sum for Two Strings,0,Medium,16,645,39
+565,Array Nesting,0,Medium,7,645,83
+368,Largest Divisible Subset,0,Medium,19,644,33
+513,Find Bottom Left Tree Value,0,Medium,5,643,110
+659,Split Array into Consecutive Subsequences,0,Medium,2,638,253
+646,Maximum Length of Pair Chain,0,Medium,11,637,56
+813,Largest Sum of Averages,0,Medium,26,632,24
+807,Max Increase to Keep City Skyline,0,Medium,3,627,167
+554,Brick Wall,0,Medium,19,627,32
+318,Maximum Product of Word Lengths,0,Medium,12,617,50
+435,Non-overlapping Intervals,0,Medium,23,611,26
+59,Spiral Matrix II,0,Medium,6,607,90
+477,Total Hamming Distance,0,Medium,14,605,42
+375,Guess Number Higher or Lower II,0,Medium,0,602,859
+801,Minimum Swaps To Make Sequences Increasing,0,Medium,16,595,36
+947,Most Stones Removed with Same Row or Column,0,Medium,3,593,179
+355,Design Twitter,0,Medium,3,592,149
+841,Keys and Rooms,0,Medium,12,591,49
+452,Minimum Number of Arrows to Burst Balloons,0,Medium,21,591,27
+331,Verify Preorder Serialization of a Binary Tree,0,Medium,17,580,34
+304,Range Sum Query 2D - Immutable,0,Medium,4,574,143
+515,Find Largest Value in Each Tree Row,0,Medium,11,573,48
+792,Number of Matching Subsequences,0,Medium,13,572,44
+178,Rank Scores,0,Medium,6,563,89
+735,Asteroid Collision,0,Medium,7,559,70
+166,Fraction to Recurring Decimal,0,Medium,0,556,1230
+904,Fruit Into Baskets,0,Medium,0,548,846
+426,Convert Binary Search Tree to Sorted Doubly Linked List,1,Medium,8,544,64
+769,Max Chunks To Make Sorted,0,Medium,6,542,90
+894,All Possible Full Binary Trees,0,Medium,10,530,49
+187,Repeated DNA Sequences,0,Medium,2,520,209
+636,Exclusive Time of Functions,0,Medium,0,518,842
+71,Simplify Path,0,Medium,0,517,1368
+535,Encode and Decode TinyURL,0,Medium,0,516,1133
+430,Flatten a Multilevel Doubly Linked List,0,Medium,5,507,86
+201,Bitwise AND of Numbers Range,0,Medium,7,505,67
+648,Replace Words,0,Medium,4,502,115
+526,Beautiful Arrangement,0,Medium,4,497,121
+752,Open the Lock,0,Medium,18,493,26
+986,Interval List Intersections,0,Medium,24,490,20
+491,Increasing Subsequences,0,Medium,5,489,91
+889,Construct Binary Tree from Preorder and Postorder Traversal,0,Medium,16,487,30
+797,All Paths From Source to Target,0,Medium,11,487,41
+490,The Maze,1,Medium,10,486,48
+419,Battleships in a Board,0,Medium,1,486,367
+388,Longest Absolute File Path,0,Medium,0,486,1031
+323,Number of Connected Components in an Undirected Graph,1,Medium,28,486,17
+950,Reveal Cards In Increasing Order,0,Medium,5,484,96
+688,Knight Probability in Chessboard,0,Medium,4,482,103
+370,Range Addition,1,Medium,29,479,16
+791,Custom Sort String,0,Medium,3,476,146
+694,Number of Distinct Islands,1,Medium,15,476,30
+348,Design Tic-Tac-Toe,1,Medium,14,476,34
+1011,Capacity To Ship Packages Within D Days,0,Medium,31,473,15
+873,Length of Longest Fibonacci Subsequence,0,Medium,22,468,21
+280,Wiggle Sort,1,Medium,9,465,48
+701,Insert into a Binary Search Tree,0,Medium,8,464,53
+865,Smallest Subtree with all the Deepest Nodes,0,Medium,3,461,137
+161,One Edit Distance,1,Medium,5,460,91
+890,Find and Replace Pattern,0,Medium,9,458,48
+254,Factor Combinations,1,Medium,22,456,20
+89,Gray Code,0,Medium,0,455,1311
+274,H-Index,0,Medium,0,448,773
+802,Find Eventual Safe States,0,Medium,6,446,67
+776,Split BST,1,Medium,16,443,27
+508,Most Frequent Subtree Sum,0,Medium,4,443,90
+549,Binary Tree Longest Consecutive Sequence II,1,Medium,16,440,26
+974,Subarray Sums Divisible by K,0,Medium,10,439,40
+228,Summary Ranges,0,Medium,1,437,428
+255,Verify Preorder Sequence in Binary Search Tree,1,Medium,9,435,45
+731,My Calendar II,0,Medium,6,431,67
+333,Largest BST Subtree,1,Medium,9,431,47
+313,Super Ugly Number,0,Medium,3,431,110
+729,My Calendar I,0,Medium,14,430,29
+498,Diagonal Traverse,0,Medium,1,429,257
+467,Unique Substrings in Wraparound String,0,Medium,6,428,70
+386,Lexicographical Numbers,0,Medium,6,426,62
+382,Linked List Random Node,0,Medium,3,426,133
+259,3Sum Smaller,1,Medium,12,423,34
+725,Split Linked List in Parts,0,Medium,4,419,86
+505,The Maze II,1,Medium,26,417,16
+147,Insertion Sort List,0,Medium,0,417,475
+676,Implement Magic Dictionary,0,Medium,3,416,106
+877,Stone Game,0,Medium,0,414,703
+556,Next Greater Element III,0,Medium,3,414,133
+362,Design Hit Counter,1,Medium,9,413,42
+487,Max Consecutive Ones II,1,Medium,68,412,6
+918,Maximum Sum Circular Subarray,0,Medium,18,410,22
+638,Shopping Offers,0,Medium,1,408,366
+959,Regions Cut By Slashes,0,Medium,4,399,86
+1110,Delete Nodes And Return Forest,0,Medium,39,397,10
+795,Number of Subarrays with Bounded Maximum,0,Medium,10,392,37
+837,New 21 Game,0,Medium,1,389,203
+462,Minimum Moves to Equal Array Elements II,0,Medium,11,389,35
+855,Exam Room,0,Medium,2,388,173
+845,Longest Mountain in Array,0,Medium,25,387,15
+524,Longest Word in Dictionary through Deleting,0,Medium,1,387,195
+958,Check Completeness of a Binary Tree,0,Medium,48,384,8
+681,Next Closest Time,1,Medium,0,384,604
+364,Nested List Weight Sum II,1,Medium,4,383,93
+529,Minesweeper,0,Medium,1,382,372
+1004,Max Consecutive Ones III,0,Medium,54,380,7
+875,Koko Eating Bananas,0,Medium,10,380,36
+926,Flip String to Monotone Increasing,0,Medium,29,379,13
+473,Matchsticks to Square,0,Medium,9,379,42
+1008,Construct Binary Search Tree from Preorder Traversal,0,Medium,26,377,14
+934,Shortest Bridge,0,Medium,13,377,29
+582,Kill Process,1,Medium,46,374,8
+921,Minimum Add to Make Parentheses Valid,0,Medium,12,370,29
+939,Minimum Area Rectangle,0,Medium,5,368,69
+981,Time Based Key-Value Store,0,Medium,7,366,50
+616,Add Bold Tag in String,1,Medium,9,366,38
+528,Random Pick with Weight,0,Medium,0,365,674
+298,Binary Tree Longest Consecutive Sequence,1,Medium,4,364,91
+418,Sentence Screen Fitting,1,Medium,1,363,187
+838,Push Dominoes,0,Medium,8,352,44
+946,Validate Stack Sequences,0,Medium,38,350,9
+737,Sentence Similarity II,1,Medium,17,350,20
+750,Number Of Corner Rectangles,1,Medium,7,347,46
+962,Maximum Width Ramp,0,Medium,34,345,10
+931,Minimum Falling Path Sum,0,Medium,9,344,38
+886,Possible Bipartition,0,Medium,21,344,16
+677,Map Sum Pairs,0,Medium,5,344,64
+576,Out of Boundary Paths,0,Medium,2,344,116
+165,Compare Version Numbers,0,Medium,0,344,1214
+951,Flip Equivalent Binary Trees,0,Medium,24,343,14
+1038,Binary Search Tree to Greater Sum Tree,0,Medium,7,342,47
+250,Count Univalue Subtrees,1,Medium,4,342,78
+1019,Next Greater Node In Linked List,0,Medium,14,340,23
+361,Bomb Enemy,1,Medium,5,339,59
+184,Department Highest Salary,0,Medium,4,338,84
+846,Hand of Straights,0,Medium,6,335,50
+284,Peeking Iterator,0,Medium,1,333,231
+384,Shuffle an Array,0,Medium,0,330,767
+319,Bulb Switcher,0,Medium,0,329,734
+881,Boats to Save People,0,Medium,13,328,24
+369,Plus One Linked List,1,Medium,27,325,12
+186,Reverse Words in a String II,1,Medium,3,325,86
+320,Generalized Abbreviation,1,Medium,9,324,35
+799,Champagne Tower,0,Medium,15,323,21
+623,Add One Row to Tree,0,Medium,2,323,111
+935,Knight Dialer,0,Medium,2,320,114
+622,Design Circular Queue,0,Medium,5,318,59
+1027,Longest Arithmetic Sequence,0,Medium,16,312,19
+861,Score After Flipping Matrix,0,Medium,3,312,84
+311,Sparse Matrix Multiplication,1,Medium,2,312,132
+294,Flip Game II,1,Medium,12,312,25
+249,Group Shifted Strings,1,Medium,5,312,54
+764,Largest Plus Sign,0,Medium,4,309,69
+870,Advantage Shuffle,0,Medium,14,308,21
+842,Split Array into Fibonacci Sequence,0,Medium,2,307,107
+880,Decoded String at Index,0,Medium,5,305,61
+536,Construct Binary Tree from String,1,Medium,4,305,74
+853,Car Fleet,0,Medium,1,304,161
+433,Minimum Genetic Mutation,0,Medium,8,304,37
+742,Closest Leaf in a Binary Tree,1,Medium,3,303,77
+1043,Partition Array for Maximum Sum,0,Medium,8,302,35
+539,Minimum Time Difference,0,Medium,3,301,98
+396,Rotate Function,0,Medium,3,300,97
