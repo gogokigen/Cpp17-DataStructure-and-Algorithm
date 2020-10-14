@@ -17,7 +17,7 @@ Id,Name,Difficulty,Similar Problems,,,,,Comments,
 ,,,,,,,,,
 Divide and conquer,,,,,,,,,
 Id,Name,Difficulty,Similar Problems,,,,,Comments,
-169,Majority Element ,★★,,,,,,你知道茴香豆的茴有几种?法?？,
+169,Majority Element ,★★,,,,,,,
 153,Find Minimum in Rotated Sorted Array ,★★,154,,,,,,
 912,Sort and Array ,★★★,,,,,,merge sort,
 315,Count of Smaller Numbers After Self ,★★★★,,,,,,merge sort / BIT,
@@ -100,7 +100,7 @@ Id,Name,Difficulty,Similar Problems,,,,,,
 992,Subarrays with K Different Integers ,★★★★,,,,,,,
 ,,,,,,,,,
 ,,,,,,,,,
-Advanced（高?）,,,,,,,,,
+Advanced,,,,,,,,,
 Id,Name,Difficulty,Similar Problems,,,,,,Comments
 208,Implement Trie (Prefix Tree) ,★★★,648,676,677,720,745,211,Trie
 307,Range Sum Query – Mutable ,★★★,,,,,,,BIT/Segment Tree
@@ -108,7 +108,7 @@ Id,Name,Difficulty,Similar Problems,,,,,,Comments
 239,Sliding Window Maximum ,★★★,,,,,,,monotonic queue
 ,,,,,,,,,
 ,,,,,,,,,
-DP（???划）,,,,,,,,,
+DP,,,,,,,,,
 Id,Name,Difficulty,Similar Problems,,,,,Comments,
 70,Climbing Stairs ,★,746,1137,,,,"I: O(n), S = O(n), T = O(n)",
 303,Range Sum Query – Immutable ,★,1218,,,,,,
