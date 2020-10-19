@@ -36,11 +36,16 @@ public:
                     while(low <= high && S[low] != S[j]) low++;
                     while(low <= high && S[high] != S[j]) high--;
                    
-                    if(low == high) dp[i][j] = dp[i+1][j-1]*2 + 1; // if low==high then only 1 same character..in between
-                    else if(low > high) dp[i][j] = dp[i+1][j-1]*2 + 2; // if low > high  then no same character..in between
-                    else dp[i][j] = dp[i+1][j-1]*2 - dp[low+1][high-1]; // if low< high and more than 1 same character..
+                    if(low == high){
+                        dp[i][j] = dp[i+1][j-1]*2 + 1; // if low==high then only 1 same character..in between
+                    } else if(low > high){
+                        dp[i][j] = dp[i+1][j-1]*2 + 2; // if low > high  then no same character..in between
+                    } else {
+                        dp[i][j] = dp[i+1][j-1]*2 - dp[low+1][high-1]; // if low< high and more than 1 same character..
+                    }
+                } else {
+                    dp[i][j] = dp[i+1][j] + dp[i][j-1] - dp[i+1][j-1]; // if no match then simply calculate the number of subsequences form the precompured answers..
                 }
-                else dp[i][j] = dp[i+1][j] + dp[i][j-1] - dp[i+1][j-1]; // if no match then simply calculate the number of subsequences form the precompured answers..
                 
                 dp[i][j] = dp[i][j] < 0 ? dp[i][j] + 1000000007 : dp[i][j] % 1000000007; // as we are taking mod at evey step and there is subtraction involved in the above 
             }                                        //steps there might be scenarios where after taking the mod it might become small and the term to be subtracted might be larger ..therefore we add mod...(number theory rules..)
