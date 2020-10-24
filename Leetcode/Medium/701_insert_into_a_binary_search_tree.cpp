@@ -31,20 +31,10 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+ 
+// Method 1: iterative
 class Solution {
 public:
-    // Recursive
-    TreeNode* insertIntoBST(TreeNode* root, int val) {
-        if(root == NULL) return new TreeNode(val);
-
-        if (root->val > val){
-            root->left = insertIntoBST(root->left, val);
-        }else {
-            root->right = insertIntoBST(root->right, val);
-        }
-        return root;
-    }
-    // Iterator
     TreeNode* insertIntoBST(TreeNode* root, int val) {
         TreeNode* curr = root;
         
@@ -64,6 +54,21 @@ public:
                     curr = curr->right;
                 }
             }
+        }
+        return root;
+    }
+};
+
+// Method 2: recursive
+class Solution {
+public:
+    TreeNode* insertIntoBST(TreeNode* root, int val) {
+        if(root == NULL) return new TreeNode(val);
+
+        if (root->val > val){
+            root->left = insertIntoBST(root->left, val);
+        }else {
+            root->right = insertIntoBST(root->right, val);
         }
         return root;
     }
