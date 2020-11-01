@@ -61,32 +61,34 @@ public:
 
 class Solution {
 public:
-    ListNode* insertionSortList(ListNode* list) {
-        if(list == nullptr) return nullptr;
+    ListNode* insertionSortList(ListNode* head) {
+        if (!head or !head->next)
+            return head;
 
-        ListNode *curr = list->next;
+        ListNode *sortedHead = head;
+        ListNode *curr = NULL;
 
-        while(curr!=nullptr) {
-            int key = curr->val;
-            ListNode *tmp = list;
-            while(tmp->val < key && tmp != curr) {
+        while (sortedHead) {
+            curr = sortedHead->next;
+
+            while (curr && sortedHead->val <= curr->val){
+                sortedHead = sortedHead->next;
+                curr = sortedHead->next;
+            }
+            
+            // shift curr to tmp(start from head) position
+            ListNode *tmp = head;
+            while( curr && tmp && tmp != curr){
+                if(tmp->val > curr->val){
+                    int t_tmp = curr->val;
+                    curr->val = tmp->val;
+                    tmp->val = t_tmp;
+                }
                 tmp = tmp->next;
             }
-
-
-            int val = key;
-            //shifting
-            while(tmp!=curr) {
-                int prv = tmp->val;
-                tmp->val = val;
-                val = prv;
-                tmp = tmp->next;
-            }
-            tmp->val =  val;
-            curr = curr->next;
-		
+            sortedHead = sortedHead->next;
         }
-        return list;
+        
+        return head;
     }
 };
-
