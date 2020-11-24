@@ -34,48 +34,32 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-//Recurssive
-class Solution {
-private:
-    bool isValidSubBST(TreeNode* root, long long min, long long max) {
-        if(!root) return true;
-
-        if(root->val <= min || root->val >= max) return false;
-        if(!isValidSubBST(root->left, min, root->val) || !isValidSubBST(root->right, root->val, max)) return false;
-        
-        return true;
-    }
-public:
-    bool isValidBST(TreeNode* root) {
-        if(!root || (!root->left && !root->right) ) return true;
-        
-        return isValidSubBST(root, LLONG_MIN, LLONG_MAX);
-    }
-};
-
 //Inorder in BST: left < root < right
 class Solution {
-private:
-    bool inorderTraverse(TreeNode* root, long& min) {
+
+    bool helper(TreeNode* root, long& min){
         if(!root) return true;
-        
-        if(!inorderTraverse(root->left, min)) return false;
+
+        if(!helper(root->left , min))
+            return false;
         
         if(root->val <= min){
             return false;
         } else {
             min = root->val;
         }
-
-        if(!inorderTraverse(root->right, min)) return false;
+        if(!helper(root->right , min))
+            return false;
         
         return true;
     }
 public:
     bool isValidBST(TreeNode* root) {
-        if(!root || (!root->left && !root->right) ) return true;
+        
+        if(!root) return true;
+
         long min = LONG_MIN;
-        return inorderTraverse(root, min);
+        return helper(root, min);
     }
 };
 
@@ -84,14 +68,14 @@ class Solution {
 public:
     bool isValidBST(TreeNode* root) {
         long pre = LONG_MIN;
-        stack<TreeNode*> todo;
-        while (root || !todo.empty()) {
+        stack<TreeNode*> cache;
+        while (root || !cache.empty()) {
             while (root) {
-                todo.push(root);
+                cache.push(root);
                 root = root -> left;
             }
-            root = todo.top();
-            todo.pop();
+            root = cache.top();
+            cache.pop();
             if (root -> val <= pre) {
                 return false;
             }
