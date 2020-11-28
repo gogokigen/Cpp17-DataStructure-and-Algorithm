@@ -39,6 +39,7 @@ public:
         if(!shouldSmaller && preRoot && preRoot->val >= root->val){
             shouldSmaller = preRoot;
         }
+        //same: if(shouldSmaller && shouldSmaller->val >= root->val)
         if(shouldSmaller && preRoot->val >= root->val){
             shouldBigger = root;
         }
