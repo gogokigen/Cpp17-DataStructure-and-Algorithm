@@ -23,35 +23,38 @@
 class Solution {
 public:
     int numIslands(vector<vector<char>>& grid) {
-        int l = grid.size(), c = grid[0].size();
-        int offsets[] = {0, 1, 0, -1, 0};
-        int island = 0;
+        int l = grid.size();
+        int c = l ? grid[0].size():0;
+        
+        vector<vector<int>> dir = {{0,1}, {0 ,-1}, {1, 0}, {-1, 0}};
+        int num_of_island = 0;
 
-        for(int i = 0; i < l; i++){
-            for(int j = 0; j < c; j++){
-                if(grid[i][j] == '1'){
-                    island++;
-                    grid[i][j] = '0';
+        for(int j = 0; j < l; j++){
+            for(int i = 0; i < c; i++){
 
-                    queue<pair<int,int>> queue;
-                    queue.push({i,j});
-                    int y = i, x = j;
-                    while(!queue.empty()){
-                        pair<int, int> curr = queue.front();
-                        queue.pop();
-                        for (int k = 0; k < 4; k++) {
-                            y = curr.first + offsets[k];
-                            x = curr.second + offsets[k + 1];
+                if(grid[j][i] == '1'){
+                    num_of_island++;
+                    grid[j][i] = '0';
+                    queue<pair<int,int>> q;
+                    q.push({j,i});
+                    int y = j, x = i;
+                    while(!q.empty()){
+                        pair<int, int> curr = q.front();
+                        q.pop();
+                        for(int k = 0; k < 4; k++){
+                            y = curr.first + dir[k][0];
+                            x = curr.second + dir[k][1];
                             if(0 <= x && x < c && 0 <= y && y < l && grid[y][x] == '1'){
                                  grid[y][x] = '0';
-                                 queue.push({y,x});
+                                 q.push({y,x});
                             }
+
                         }
                     }
                 }
             }
         }
-        return island;
+        return num_of_island;
     }
 };
 
