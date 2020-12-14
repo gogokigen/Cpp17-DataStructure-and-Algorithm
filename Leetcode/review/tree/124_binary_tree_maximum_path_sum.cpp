@@ -32,19 +32,20 @@
  */
 class Solution {
 private:
-    int helper(TreeNode* root, int &ans){
-        if(root == NULL) return 0;
-        int l = max( helper(root->left, ans) , 0 );
-        int r = max( helper(root->right, ans), 0 );
+    int helper(TreeNode* root, int& ans){
+        if(root == nullptr) return 0;
+
+        int l = max(helper(root->left, ans), 0 );
+        int r = max(helper(root->right, ans), 0 );
         
         int sum = l + r + root->val;
-        
-        ans = max(ans, sum);
-        return max(l , r) + root->val;
+        ans = max(ans, sum); // check whether should I pick up root->val
+                             // if ans = ans -> NO, ans = sum -> YES
+        return max(l , r) + root->val; // bottom up
     }
 public:
     int maxPathSum(TreeNode* root) {
-        if(root == NULL) return 0;
+        if(root == nullptr) return 0;
         int ans = INT_MIN;
         helper(root, ans);
         return ans;
