@@ -32,14 +32,18 @@ class Solution {
     TreeNode* ans;
     bool helper(TreeNode* curr, TreeNode* p, TreeNode* q){
         if(!curr) return false;
-        int left = helper(curr->left, p, q) ? 1: 0;
-        int right = helper(curr->right, p, q) ? 1: 0;
-        int mid = (curr == p || curr == q) ? 1 : 0;
         
-        if(mid + left + right >= 2){
+        int deep_left = helper(curr->left, p, q) ? 1 : 0;
+        int deep_right = helper(curr->right, p, q) ? 1 : 0;
+        
+        //a node can be a descendant of itself 
+        int mid = (curr == p) || (curr == q) ? 1 : 0;
+        
+        if( deep_left + deep_right + mid >= 2) {
             ans = curr;
         }
-        return (mid + left + right > 0);
+
+        return (mid + deep_left + deep_right > 0);
     }
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {

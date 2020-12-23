@@ -61,3 +61,72 @@ public:
     }
 };
 
+//TLE, but this version is great !!
+class Solution {
+    bool oneCharDiff(string w1, string w2){
+        int diff = 0;
+        for(int i = 0; i < w1.length(); i++){
+            char c1 = w1[i], c2 = w2[i];
+            if(c1 != c2){
+                diff++;
+            }
+        }
+        return diff == 1;
+    }
+    unordered_map<string, vector<string>> constructGraph(vector<string> wordList){
+        unordered_map<string, vector<string>> graph;
+        int n = wordList.size();
+        for(int i = 0; i < n - 1; i++){
+            for(int j = i + 1; j < n; j++){
+                string w1 = wordList[i], w2 = wordList[j];
+                if(oneCharDiff(w1 , w2)){
+                    //cout << "w1: " << w1 << ", w2: " << w2 << endl;
+                    graph[w1].push_back(w2);
+                    graph[w2].push_back(w1);
+                    
+                }
+            }
+        }
+        //cout << "graph: " << graph.size() << endl;
+        return graph;
+    }
+public:
+    int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
+        if(find(wordList.begin(), wordList.end(), endWord ) == wordList.end()) return 0;
+        
+        if(find(wordList.begin(), wordList.end(), beginWord ) == wordList.end()){
+            wordList.push_back(beginWord);
+        }
+        unordered_map<string, vector<string>> graph = constructGraph(wordList);
+        
+        set<string> visited;
+        visited.insert(beginWord);
+        queue<string> q;
+        q.push(beginWord);
+        
+        int cost = 1;
+        
+        while(!q.empty()){
+            int n_queue = q.size();
+            //cout << n_queue << endl;
+            for(int i = 0; i < n_queue; i++){
+                string curr = q.front();
+                //cout << "curr: " << curr << endl;
+                q.pop();
+                if(curr == endWord){
+                    return cost;
+                }
+                
+                for(auto neighbor : graph[curr]){
+                    //cout << "neighbor: " << neighbor << endl;
+                    if(visited.find(neighbor)  == visited.end() ){
+                        visited.insert(neighbor);
+                        q.push(neighbor);
+                    }
+                }
+            }
+            cost++;
+        }
+        return 0;
+    }
+};

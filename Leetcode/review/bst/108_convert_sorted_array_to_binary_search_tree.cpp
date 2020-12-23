@@ -73,7 +73,9 @@ public:
         range.push({0, nums.size()-1});
 
         while(!range.empty()){
-            auto p = range.top(); range.pop();
+            auto p = range.top();
+            range.pop();
+
             int l = p.first;
             int r = p.second;
 
@@ -81,20 +83,21 @@ public:
             if(l == r){
                 fillval(nodes, nums[l]);
                 nodes.pop();
-                continue;
-            }
-            int mid = (l+r)/2;
-            fillval(nodes, nums[mid]);
+            } else {
+                int mid = (l+r)/2;
+                fillval(nodes, nums[mid]);
 
-            TreeNode* n = nodes.top(); nodes.pop();
-            n->right = new TreeNode(0);
-            nodes.push(n->right);  
-            if(mid > l){
-                n->left = new TreeNode(0); 
-                nodes.push(n->left);
+                TreeNode* n = nodes.top();
+                nodes.pop();
+                n->right = new TreeNode(0);
+                nodes.push(n->right);  
+                if(mid > l){
+                    n->left = new TreeNode(0); 
+                    nodes.push(n->left);
+                }
+                range.push({mid+1, r}); 
+                range.push({l, mid-1});
             }
-            range.push({mid+1, r}); 
-            range.push({l, mid-1});
         }
         return root;
     }
