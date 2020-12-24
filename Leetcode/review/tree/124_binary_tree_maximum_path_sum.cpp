@@ -37,11 +37,10 @@ private:
 
         int l = max(helper(root->left, ans), 0 );
         int r = max(helper(root->right, ans), 0 );
-        
-        int sum = l + r + root->val;
-        ans = max(ans, sum); // check whether should I pick up root->val
+
+        ans = max(ans, l + r + root->val); // check whether should I pick up root->val
                              // if ans = ans -> NO, ans = sum -> YES
-        return max(l , r) + root->val; // bottom up
+        return max(l + root->val , r + root->val); // bottom up
     }
 public:
     int maxPathSum(TreeNode* root) {

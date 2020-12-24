@@ -34,22 +34,25 @@
  * };
  */
 class Solution {
-private:
-    int totalSum = 0;
-    void helper(TreeNode* root, int tmpSum){
-        if(root == nullptr) return;
-
+    int sum = 0;
+    void dfs(TreeNode* root, int num){
+        if (!root) return;
+        
         if(root->left == nullptr && root->right == nullptr){
-            totalSum += tmpSum*10 + root->val;
+            sum += num*10 + root->val;
             return;
         }
-        helper(root->left, tmpSum*10 + root->val);
-        helper(root->right, tmpSum*10 + root->val);
+        num = num * 10 + root->val;
+        
+
+        dfs(root->left, num);
+        dfs(root->right, num);
     }
 public:
     int sumNumbers(TreeNode* root) {
-        totalSum = 0;
-        helper(root, 0);
-        return totalSum;
+        if (!root) return 0;
+        dfs(root, 0);
+        
+        return sum;
     }
 };
