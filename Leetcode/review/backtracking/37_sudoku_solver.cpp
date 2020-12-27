@@ -54,7 +54,10 @@ public:
         for(int i = 0; i < 9; i++){
             if( rows[row][i] || cols[col][i] || boxes[ (row/3)*3 + col/3 ][i] ) continue;
 
+            // i 這數字完全沒在 (rows[row][i], cols[col][i], boxes[ (row/3)*3 + col/3 ][i] ) 使用過
             board[row][col] = i + '1';
+
+            //使用過要立為 true
             rows[row][i] = cols[col][i] = boxes[ (row/3)*3 + col/3 ][i] = true;
 
             if(backtrack(board, row, col)){
