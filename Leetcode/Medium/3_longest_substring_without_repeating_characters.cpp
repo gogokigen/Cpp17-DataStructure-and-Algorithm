@@ -45,16 +45,19 @@ public:
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        int n = s.length();
-        unordered_map<char,int> mp;
-        int ans = 0;
-        int l = 0;
-        for(int i = 0; i < n; i++){
-            if( mp.find(s[i]) != mp.end() && mp[s[i]] >= l){
-                l = mp[s[i]] + 1;
+        int len = s.length();
+
+        unordered_map<char, int> mp; // {char , start pos}
+        int start = 0, ans = 0;
+
+        for(int end = 0; end < len; end++){
+            
+            // if s[end] can be found in mp, then update start position
+            if(mp.find(s[end]) != mp.end()&& mp[s[end]] >= start){
+                start = mp[s[end]] + 1;
             }
-            ans = max( ans, (i-l) + 1);
-            mp[s[i]] = i;
+            mp[s[end]] = end;
+            ans = max( ans, end - start + 1);
         }
         return ans;
     }
