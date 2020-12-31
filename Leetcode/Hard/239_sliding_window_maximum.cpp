@@ -29,14 +29,16 @@ public:
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
         vector<int>ans;
 
-        deque<int> dq; //save the pos
+        deque<int> dq; //save the positions which numbers are kth large. 
         
         for (int start = 0; start < nums.size(); start++) {
             while (!dq.empty() && (start - dq.front() >= k)){
+                // keep size of dq <= k
                 dq.pop_front();
             }
             
             while (!dq.empty() && (nums[start] > nums[dq.back()])){
+                // save the pre kth large
                 dq.pop_back();
             }
             
