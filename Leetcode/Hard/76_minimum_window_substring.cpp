@@ -22,17 +22,17 @@
 *******************************************************************/
 class Solution {
 public:
-    void fillFreq(int a[], string str){
+    void fillFreq(vector<int>& freq, string str){
         for(char c : str)
-            a[c-'A']++;
+            freq[c-'A']++;
     }
     
     string minWindow(string s, string t) {
 
-        int freq[256]={0}, window_freq[256]={0};
+        vector<int> freq( 256, 0), window_freq( 256, 0);
         int start = 0, n = s.size();
         int min_wind = INT_MAX, i, j, ctr = 0;
-        fillFreq(freq,t);
+        fillFreq( freq, t);
         
         for(int end = 0; end < n; end++){
             int ind =  s[end]-'A';
@@ -56,6 +56,6 @@ public:
                 }
             }
         }
-        return min_wind==INT_MAX ? "" : s.substr(i,min_wind);
+        return min_wind == INT_MAX ? "" : s.substr(i,min_wind);
     }
 };
