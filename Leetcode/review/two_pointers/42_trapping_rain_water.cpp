@@ -45,3 +45,27 @@ public:
         return sum_water;
     }
 };
+
+class Solution {
+public:
+    int trap(vector<int>& height) {
+        int sum_water = 0;
+        int h_size = height.size();
+        if(h_size == 0) return 0;
+
+        int l = 0, r = h_size - 1;
+        int l_max = height[l], r_max = height[r];
+        while( l < r){
+            if(l_max < r_max){
+                sum_water += l_max - height[l];
+                l++;
+                l_max = max(l_max, height[l]);
+            }else{
+                sum_water += r_max - height[r];
+                r--;
+                r_max = max(r_max, height[r]);
+            }
+        }
+        return sum_water;
+    }
+};
