@@ -21,7 +21,9 @@ public:
     bool isPalindrome(string s) {
         if(s.empty()) return true;
         
-        for(int left = 0, right = s.length()-1; left < right; left++, right--){
+        int left = 0, right = s.length()-1;
+        
+        while( left < right){
             while(left < right && !isalnum(s[left])){
                 left++; //ignore !(a~z||A~Z||0~9)
             }
@@ -33,6 +35,7 @@ public:
                 //ignoring cases.
                 return false;
             }
+            left++, right--;
         }
 
         return true;
