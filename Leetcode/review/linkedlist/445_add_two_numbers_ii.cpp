@@ -74,50 +74,91 @@ public:
     }
 };
 
+class Solution {
+    ListNode* reverseList(ListNode* head) {
+        if(head == nullptr || head->next == nullptr){
+            return head;
+        }
+        ListNode* curr = head, *prev = nullptr, *next = nullptr;
+        
+        while(curr){
+            //cout << curr->val << endl;
+            next = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = next;
+        }
+        
+        return prev;
+    }
+
+public:
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        if(l1 == nullptr) return l2;
+        if(l2 == nullptr) return l1;
+
+        l1 = reverseList(l1);
+        l2 = reverseList(l2);
+
+        ListNode* curr = new ListNode(0);
+        ListNode* head = curr;
+        
+        int carry = 0;
+        while(l1 != nullptr || l2 != nullptr){
+
+            int total = 0;
+            if(l1 != nullptr) total += l1->val;
+            if(l2 != nullptr) total += l2->val;
+
+            curr->next = new ListNode( (carry + total)%10);
+            carry = (carry + total)/10;
+            curr = curr->next;
+
+            if(l1 != nullptr) l1 = l1->next;
+            if(l2 != nullptr) l2 = l2->next;
+        }
+
+        if(carry > 0){
+            curr->next = new ListNode(carry);
+        }
+        return reverseList(head->next);
+    }
+};
 
 
 // Method 2:
-// https://leetcode.com/problems/add-two-numbers-ii/discuss/880961/C%2B%2B-No-reverse-Solution-Explained-~100-Time-~80-Space
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        // support variables
-        bool asRem = false;
-        int pos1 = 0, pos2 = 0;
-        ListNode *store1[100], *store2[100];
-        // main loop to read
-        while (l1 || l2) {
-            // storing the explored values
-            if (l1) {
-                store1[pos1++] = l1;
-                l1 = l1->next;
-            }
-            if (l2) {
-                store2[pos2++] = l2;
-                l2 = l2->next;
-            }
+        vector<int> nums1, nums2;
+        while(l1) {
+            nums1.push_back(l1->val);
+            l1 = l1->next;
         }
-        // making sure l1 is not smaller
-        if (pos1 < pos2) {
-            swap(store1, store2);
-            swap(pos1, pos2);
-            //cout << store1[0]->val << ' ' << store2[0]->val << '\n';
-            //cout << pos1 << ' ' << pos2 << '\n';
+        while(l2) {
+            nums2.push_back(l2->val);
+            l2 = l2->next;
         }
-        // main loop to write
-        while (pos1--) {
-            l1 = store1[pos1];
-            l2 = pos2 > 0 ? store2[--pos2] : NULL;
-            l1->val += asRem + (l2 ? l2->val : 0);
-            asRem = l1->val > 9;
-            l1->val %= 10;
+
+        int m = nums1.size(), n = nums2.size();
+        int sum = 0, carry = 0;
+
+        ListNode *head = nullptr, *t_next = nullptr;
+
+        for(int i = m - 1, j = n - 1; i >= 0 || j >= 0 || carry > 0; i--, j--) {
+            sum = carry;
+            if(i >= 0) 
+                sum += nums1[i];
+
+            if(j >= 0)
+                sum += nums2[j];
+
+            carry = sum / 10;
+
+            t_next = new ListNode(sum%10);
+            t_next->next = head;
+            head = t_next;
         }
-        // last touch: we need to add a node on top if we still had a remainder
-        if (asRem) {
-            l2 = new ListNode(1);
-            l2->next = l1;
-            l1 = l2;
-        }
-        return l1;
+        return head;
     }
 };
