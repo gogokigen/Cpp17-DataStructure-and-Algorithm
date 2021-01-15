@@ -42,3 +42,28 @@ public:
         inorder(root->right, ans);
     }
 };
+
+
+class Solution {
+public:
+    vector<int> inorderTraversal(TreeNode* root) {
+        if(root == nullptr) return{};
+        vector<int> ans;
+        stack<TreeNode*> table;
+        TreeNode *tmp = root;
+        
+        while(tmp != nullptr || table.size()>0){
+            if(tmp != nullptr){
+                table.push(tmp);
+                tmp = tmp->left;
+            } else {
+                TreeNode *node = table.top();
+                table.pop();
+                ans.push_back(node->val);
+                tmp = node->right;
+            }
+            
+        }
+        return ans;
+    }
+};
