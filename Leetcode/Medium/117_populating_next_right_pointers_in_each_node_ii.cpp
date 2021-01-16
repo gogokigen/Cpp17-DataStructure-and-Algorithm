@@ -1,5 +1,5 @@
 /*******************************************************************
-* https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+* https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
 * Medium
 * 
 * Conception: 
@@ -61,26 +61,6 @@ public:
                 if(curr->left!=NULL) q.push(curr->left);
                 if(curr->right!=NULL) q.push(curr->right);
             }
-        }
-        return root;
-    }
-};
-
-class Solution {
-public:
-    Node* connect(Node* root) {
-        if(root && root->left) {
-            root->left->next = root->right;
-            Node* l = root->left;
-            Node* r = root->right;
-
-            while(l->right){
-                l->right->next = r->left;
-                l = l->right;
-                r = r->left;
-            }
-            root->left = connect(root->left);
-            root->right = connect(root->right);
         }
         return root;
     }
