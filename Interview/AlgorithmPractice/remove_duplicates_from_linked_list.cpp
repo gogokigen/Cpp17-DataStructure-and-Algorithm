@@ -32,7 +32,7 @@ public:
     
                     dup = toFind->next;
                     toFind->next = toFind->next->next;
-                    dup = NULL;
+                    delete dup;
                 }else {
                     toFind = toFind->next;
                 }

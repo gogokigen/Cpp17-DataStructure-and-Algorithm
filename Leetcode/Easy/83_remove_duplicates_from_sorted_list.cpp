@@ -38,9 +38,8 @@ public:
             if( curr->val == curr->next->val){
                 //remove curr
                 ListNode* tmp = curr->next;
-                tmp = NULL;
-
                 curr->next = curr->next->next;
+                delete tmp;
             }else{
                 curr = curr->next;
             }
