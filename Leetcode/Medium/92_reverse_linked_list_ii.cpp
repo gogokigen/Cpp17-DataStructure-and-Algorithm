@@ -30,7 +30,7 @@ class Solution {
 public:
     ListNode* reverseBetween(ListNode* head, int m, int n) {
         
-        ListNode *dummy = new ListNode(0), *prev = dummy, *curr = NULL;
+        ListNode *dummy = new ListNode(0), *prev = dummy;
         dummy->next = head;
         for (int i = 0; i < m - 1; i++) {
            prev = prev -> next;
