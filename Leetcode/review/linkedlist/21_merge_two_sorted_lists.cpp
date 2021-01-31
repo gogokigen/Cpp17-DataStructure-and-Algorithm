@@ -33,22 +33,37 @@ public:
         if(l1 != NULL && l2 == NULL) return l1;
         if(l1 == NULL && l2 == NULL) return NULL;
 
-        ListNode* head = new ListNode();
-        ListNode* tmpHead = head;
+        ListNode* curr = new ListNode(INT_MIN);
+        ListNode* head = curr;
         
         while(l1 != NULL && l2 != NULL){
             if(l1->val <= l2->val){
-                tmpHead->next = l1;
+                curr->next = new ListNode(l1->val);
                 l1 = l1->next;
-            }else {
-                tmpHead->next = l2;
+            }else{
+                curr->next = new ListNode(l2->val);
                 l2 = l2->next;
             }
-            tmpHead = tmpHead->next;
-            tmpHead->next = l1 == NULL ? l2 : l1;
-
+            curr = curr->next;
         }
-        return head->next;
+        if(l1) curr->next = l1;
+        if(l2) curr->next = l2;
         
+        return head->next;
+    }
+};
+
+class Solution {
+public:
+    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
+        if (l1 == NULL) return l2;
+        if (l2 == NULL) return l1;
+        if (l1->val <= l2->val) {
+            l1->next = mergeTwoLists(l1->next, l2);
+            return l1;
+        } else {
+            l2->next = mergeTwoLists(l1, l2->next);
+            return l2;
+        }
     }
 };

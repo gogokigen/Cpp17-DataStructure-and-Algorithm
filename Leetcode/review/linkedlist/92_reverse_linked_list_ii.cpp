@@ -30,20 +30,29 @@ class Solution {
 public:
     ListNode* reverseBetween(ListNode* head, int m, int n) {
         
-        ListNode *dummy = new ListNode(0), *prev = dummy;
+        ListNode *dummy = new ListNode(0), *pos = dummy;
         dummy->next = head;
         for (int i = 0; i < m - 1; i++) {
-           prev = prev -> next;
+           pos = pos->next;
         }
 
-        ListNode *fast = prev->next, *tmp  = NULL;
+        ListNode *curr = pos->next, *revHead = nullptr;
         for (int i = 0; i < n - m; i++) {
-            tmp = fast->next;
-            fast->next = tmp->next;
-            tmp->next = prev->next;
-            prev->next = tmp;
-       }
-        
+            
+            //to find the next pointer of revHead
+            revHead = curr->next;
+            //cout << "revHead: " << revHead->val << ",";
+            curr->next = revHead->next;
+            //cout << "curr->next: " << curr->next->val << ",";
+            
+            //start to reverse pointer
+            revHead->next = pos->next;
+            //cout << "revHead->next: " << revHead->next->val << ",";
+            pos->next = revHead;
+            //cout << "pos->next: " << pos->next->val;
+            //cout << endl;
+        }
+
         return dummy->next;
     }
 };
